@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav id="navbarContianer">
+            <div id="logo">Recipe Finder</div>
+            <ul id="navbar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./favorites.html">Favorites</a></li>
+                <li><a href="./login.html"><button id="loginBtn">Login</button></a></li>
+                <li><a href="#"><button id="logoutBtn">Logout</button></a></li>
+            </ul>
+            <button id="menubarBtn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <div id="menubarContainer">
+        <div id="menubarCloseBtn"><i class="fa-solid fa-xmark"></i></div>
+        <ul id="menubar">
+            <li><a href="./index.html">Home</a></li><hr class="menubarHr">
+            <li><a href="./favorites.html">Favorites</a></li><hr class="menubarHr">
+            <li><a href="./login.html" id="loginBtn">Login</a></li>
+        </ul>
+    </div>
+
+
+    <div id="searchTxt">Search for Recipes</div>
+    
+    <form id="ingredientSelector">
+    </form>
+
+    <div id="buttonsContainer">
+        <button id="submitBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button id="clearBtn"><i class="fa-solid fa-eraser"></i></button>
+        <button id="filterBtn" value="show">Filters</i></button>
+    </div>
+
+    
+    <div id="filter">
+        <div id="cusineContainer">
+            <label>Cuisine:</label>
+            <select id="cuisine">
+                <option>--</option>
+                <option>Asian</option>
+                <option>Italian</option>
+                <option>Indian</option>
+                <option>Mexican</option>
+                <option>American</option>
+                <option>Greek</option>
+                <option>International</option>
+            </select>
+        </div>
+
+        <div id="prepTimeContainer">
+            <label>Preperation Time:</label>
+            <select id="prepTime">
+                <option>--</option>
+                <option value="10">Under 10 min</option>
+                <option value="20">Under 20 min</option>
+                <option value="30">Under 30 min</option>
+                <option value="45">Under 45 min</option>
+                <option value="60">Under 1 hour</option>
+            </select>
+        </div>
+
+        <div id="dietaryRestrictionsContainer">
+            <label>Dietary Restrictions:</label>
+            <select id="dietaryRestrictions">
+                <option>--</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Gluten-Free">Gluten-Free</option>
+                <option value="Dairy Free">Dairy Free</option>
+                <option value="Nut Free">Nut Free</option>
+                <option value="Pescetarian">Pescetarian</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="darkDiv"></div>
+
+    <div id="result"></div>
+
+    <button id="addBtn" state="add"><i class="fa-solid fa-plus"></i></button>
+
+    <div id="addRecipeDiv">
+
+        <form id="addRecipeForm">
+            <label for="addedRecipeName">Recipe Name</label>
+            <input id="addedRecipeName" type="text" required>
+
+            <label for="addedIngredients">Ingredients</label>
+            <textarea id="addedIngredients" rows="5" required></textarea>
+
+            <label for="addedProcedure">Procedure</label>
+            <textarea id="addedProcedure" rows="5" required></textarea>
+
+            <label for="addedCuisine">Cuisine</label>
+            <select id="addedCuisine">
+                <option>--</option>
+                <option>Asian</option>
+                <option>Italian</option>
+                <option>Indian</option>
+                <option>Mexican</option>
+                <option>American</option>
+                <option>International</option>
+            </select>
+
+            <label for="addedPrepTime">Preperation Time</label>
+            <select id="addedPrepTime">
+                <option>--</option>
+                <option value="10">Under 10 min</option>
+                <option value="20">Under 20 min</option>
+                <option value="30">Under 30 min</option>
+                <option value="45">Under 45 min</option>
+                <option value="60">Under 1 hour</option>
+            </select>
+
+            <label for="addedDietaryRestriction">Dietary Restriction</label>
+            <select id="addedDietaryRestriction">
+                <option>--</option>
+                <option>Gluten-free</option>
+                <option>Vegetarian</option>
+                <option>Vegan</option>
+            </select>
+
+            <button id="publishBtn">Publish</button>
+        </form>
+    </div>
+
+    <script src="index.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/dac89c04df.js" crossorigin="anonymous"></script>
+</body>
+</html>

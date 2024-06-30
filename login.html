@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <nav id="navbarContianer">
+            <div id="logo">Recipe Finder</div>
+            <ul id="navbar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./favorites.html">Favorites</a></li>
+                <li><a href="./login.html"><button id="loginBtn">Login</button></a></li>
+                <li><a href="#"><button id="logoutBtn">Logout</button></a></li>
+            </ul>
+            <button id="menubarBtn"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <div id="menubarContainer">
+        <div id="menubarCloseBtn"><i class="fa-solid fa-xmark"></i></div>
+        <ul id="menubar">
+            <li><a href="./index.html">Home</a></li><hr class="menubarHr">
+            <li><a href="./favorites.html">Favorites</a></li><hr class="menubarHr">
+            <li><a href="./login.html" id="loginBtn">Login</a></li>
+        </ul>
+    </div>
+
+    <div id="container">
+        <h1 id="formTitle">Login</h1>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input id="username" type="text" required minlength="8">
+
+            <label for="password">Password</label>
+            <input id="password" type="password" required minlength="8">
+
+            <button id="loginBtn">Login</button>
+        </form>
+    </div>
+
+    <div id="darkDiv"></div>
+
+    <script src="login.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/dac89c04df.js" crossorigin="anonymous"></script>
+</body>
+</html>
