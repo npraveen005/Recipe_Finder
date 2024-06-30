@@ -21,8 +21,14 @@ Recipe Finder is a web application that allows users to search for recipes based
 
 ## Getting Started
 
-1. Clone the repository
-2. Open `index.html` in your web browser to start using the application.
+1. You can view the live website at: https://npraveen005.github.io/Recipe_Finder/
+
+2. To run the project locally:
+   - Clone the repository:
+     ```
+     git clone https://github.com/npraveen005/Recipe_Finder.git
+     ```
+   - Open `index.html` in your web browser to start using the application.
 
 ## File Structure
 
